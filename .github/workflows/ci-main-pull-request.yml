@@ -239,7 +239,7 @@ jobs:
   scc:
     name: 'Source code complexity checks'
     if: ${{ inputs.perform-complexity-checks == true }}
-    uses: chef/common-github-actions/.github/workflows/scc.yml@main
+    uses: inspec/common-github-actions/.github/workflows/scc.yml@main
     with:
       outputfilename: ${{ inputs.scc-output-filename }}
 
